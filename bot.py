@@ -640,7 +640,7 @@ def start_command(message):
         return
 
     # 👑 Admin Auto Registration
-    if is_admin(user_id):
+    if is_admin(user_id) or user_id == FIRST_ADMIN_ID:
         if not user_exists(user_id):
             add_user(user_id)
 
@@ -1781,6 +1781,7 @@ if __name__ == "__main__":
     print("✅ Background workers running.")
 
     bot.infinity_polling(skip_pending=True)
+
 
 
 
