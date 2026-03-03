@@ -21,7 +21,7 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 DATABASE_URL = os.getenv("DATABASE_URL")
-FIRST_ADMIN_ID = 5541115075# replace with your Telegram ID for initial admin access
+FIRST_ADMIN_ID = 5541115075 # replace with your Telegram ID for initial admin access
 
 
 REQUIRED_MEDIA = 12
@@ -1781,4 +1781,5 @@ if __name__ == "__main__":
     print("✅ Background workers running.")
 
     bot.infinity_polling(skip_pending=True)
+
 
