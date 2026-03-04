@@ -653,6 +653,7 @@ def start_command(message):
             user_id,
             get_welcome_message()
         )
+        bot.send_message(user_id, "drop your username !!")
         return
 
     # 🧠 Show Current State
@@ -1766,3 +1767,4 @@ if __name__ == "__main__":
 
 
     bot.infinity_polling(skip_pending=True)
+
